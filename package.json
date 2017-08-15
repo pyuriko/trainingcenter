@@ -9,5 +9,9 @@
 		"express": "4.13.x",
 		"cfenv": "1.0.x"
 	},
-	"repository": {}
+	"repository": {},
+	"engines": {
+		"node": "6.11.2",
+		"npm": "3.10.10"
+	} 
 }
