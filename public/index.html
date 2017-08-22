@@ -23,6 +23,13 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
+    <!-- morphext -->
+    <link rel="stylesheet" href="morphext/dist/morphext.css" />
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="morphext/dist/morphext.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" />
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -70,8 +77,10 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Bem-vindo ao Centro de Treinamentos</div>
-          <div class="intro-heading">Seja o próximo CEO da sua empresa!</div>
-          <a id="querosaber-btn" href="#services" class="btn btn-xl"  onclick="ga('send', 'event', 'click', 'tellmemore')" >Quero saber como!</a>
+          <div class="intro-heading">Seja o próximo </div>
+          <div class="intro-heading"><span id="js-rotating" style="color: #fed136; font-size: 1.3em">CEO, CTO, CIO, CMO, CFO, FELLOW</span></div>
+          <div class="intro-heading">da sua empresa!</div>
+             <a id="querosaber-btn" href="#services" class="btn btn-xl"  onclick="ga('send', 'event', 'click', 'tellmemore')" >Quero saber como!</a>
         </div>
       </div>
     </header>
@@ -752,7 +761,6 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -766,6 +774,19 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
+    <script type="text/javascript">
+      $("#js-rotating").Morphext({
+          // The [in] animation type. Refer to Animate.css for a list of available animations.
+          animation: "bounceIn",
+          // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+          separator: ",",
+          // The delay between the changing of each phrase in milliseconds.
+          speed: 1500,
+          complete: function () {
+              // Called after the entrance animation is executed.
+          }
+      });
+    </script>
   </body>
 
 </html>
