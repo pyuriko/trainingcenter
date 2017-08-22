@@ -1,7 +1,7 @@
 module.exports = {
   'Demo test GM' : function (browser) {
     browser
-      .url('https://trainingcenter.mybluemix.net')
+      .url('https://trainingcenter-test.mybluemix.net')
 
 
 
